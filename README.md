@@ -2,13 +2,13 @@
 This is a source code for producing results in the "Predicting Dementia in Parkinson's Disease Patients" accepted to npj Parkinson's Disease
 
 
-**Note that to run these scripts you would need the data, which can be obtained upon contacting us (bchol@stanford.edu) due to privacy issues**
+**Note that to run these scripts you would need the data, which can be obtained upon contacting us (bchol@stanford.edu) due to privacy issues, any question regarding the source code please contact tpjoe@stanford.edu**
 
 
-Once obtain the data, the following scripts would reproduce results as follow:
+Once obtain the data, the following notebooks would reproduce results as described below (with title of each section in the notebook indicating what specific task it does):
 **1. data_preprocessing.ipynb** - This notebook will have to be run first to generate processed data for other downstream machine learning models and analyses. This module is in Python and the data is generated for any application in R and in MATLAB (multitask learning). \
 **2. multilevel_models.ipynb** - This notebook operates in R and contains all mix-effect models prediction and analyses found in the manuscript. \
-**3. multitask.ipynb** - This module analyzes and plots results from multitask learning model. The multitask model results can be obtained by running the script \ **scripts/TemporalLASSO.py**, which would require the user to setup MongoDB, pyMongo, and MATLAB path in their machine. \
+**3. multitask.ipynb** - This module analyzes and plots results from multitask learning model. The multitask model results can be obtained by running the  **scripts/TemporalLASSO.py**, which would require the user to setup MongoDB, pyMongo, and MATLAB path in their machine. \
 **4. survival.ipynb** - This notebook contain the source code for plotting interested effects on survival, written in R language. \
 **5. Sankey.ipynb** - This notebook plots the Sankey diagram of the cohort, it requires a plotly API.
 
